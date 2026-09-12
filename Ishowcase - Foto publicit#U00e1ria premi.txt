@@ -1,0 +1,25 @@
+Ishowcase - Foto publicitária premium do produto.
+/metaad — Imagem pronta para anúncio no Meta Ads.
+(3Dbillboard — Produto em um outdoor 3D gigante.
+hologram - Produto com hologramas e interfaces digitais.
+/nature — Produto integrado a elementos naturais.
+/fire - Produto rodeado por fogo e faíscas.
+/luxury - Produto com estética de luxo.
+/underwater - Produto debaixo d'água.
+/cinematic - Cena com visual cinematográfico.
+/portal - Produto saindo de um portal de energia.
+/macro - Close com detalhes extremos.
+/space - Produto no espaço. /floating - Produto flutuando com elementos ao redor.
+/cyberpunk - Campanha com estética cyberpunk.
+Isplash — Produto rodeado por água ou líquido.
+/desert - Produto em um deserto cinematográfico
+/energy - Produto com raios e energia visual.
+/jungle - Produto em uma selva tropical.
+/productshot - Foto profissional de estúdio.
+/storm - Produto em meio a uma tempestade épica.
+/neon - Cena futurista com luzes neon.
+/ocean - Produto em uma cena oceânica.
+/explosion - Produto no meio de uma explosão visual.
+/futuristic — Produto em ambiente tecnológico futurista.
+/ice - Produto em um ambiente congelado.
+Ismoke - Produto rodeado por fumaça dramática.
