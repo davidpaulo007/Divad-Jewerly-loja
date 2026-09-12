@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maison Aureum — relógios de luxo selecionados.">
+  <title>Divad Jewerly — Relógios de Luxo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="announcement">ENTREGA SEGURA · AUTENTICIDADE GARANTIDA · ENVIO EM PORTUGAL E TODA EUROPA </div>
+
+  <header class="header">
+    <a class="logo" href="#"><span> DIVAD JEWELRY</span></a>
+    <nav>
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">A Divad</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="accountBtn">Entrar</button>
+      <button class="cart-btn" id="openCart">Pacote <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CONCEITO E ESTÉTICA </p>
+        <h1>O teu tempo,<br><em>É precioso.</em></h1>
+        <p>Uma seleção exclusiva de joias para quem reconhece que o verdadeiro luxo está nos detalhes.</p>
+        <a class="btn btn-light" href="#colecao">Explorar coleção</a>
+      </div>
+      <div class="hero-watch">
+        <div class="watch-orb"></div>
+        <div class="watch-placeholder">Divad <br>Jewelry</div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div><strong>100%</strong><span>Autenticidade</span></div>
+      <div><strong>48H</strong><span>Expedição</span></div>
+      <div><strong>14 DIAS</strong><span>Devolução</span></div>
+      <div><strong>1 ANO</strong><span>Garantia</span></div>
+    </section>
+
+    <section class="collection" id="colecao">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">A COLEÇÃO</p>
+          <h2>Peças que marcam<br>momentos.</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="classic">Clássicos</button>
+          <button class="filter" data-filter="sport">Desportivos</button>
+           <button class="filter" data-filter="sport">Formais</button>
+          <button class="filter" data-filter="limited">Edições especiais</button>
+           <button class="filter" data-filter="colares">Colares</button>
+        </div>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="editorial" id="sobre">
+      <div class="editorial-image">Divad<br>Jewelry</div>
+      <div class="editorial-copy">
+        <p class="eyebrow">A Divad</p>
+        <h2>Luxo sem ruído.</h2>
+        <p>Na Divad Jewerly, cada peça é escolhida pela sua história, engenharia e presença. Trabalhamos com uma Joalharia pequena e exigente para oferecer uma experiência de compra discreta, segura e pessoal.</p>
+        <a class="text-link" href="#contactos">Conhecer a Divad →</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">PRIVATE LIST</p>
+      <h2>Entre no círculo.</h2>
+      <p>Receba novidades sobre novas peças e edições especiais antes de serem anunciadas.</p>
+      <form id="newsletterForm">
+        <input type="email" placeholder="O seu email" required>
+        <button class="btn btn-dark" type="submit">Entrar na lista</button>
+      </form>
+      <small id="newsletterMsg"></small>
+    </section>
+  </main>
+
+  <footer id="contactos">
+    <div class="footer-brand">Divad <span>Jewelry</span><p>Luxo selecionado. Serviço excecional.</p></div>
+    <div><h4>Comprar</h4><a href="#colecao">Coleção</a><a href="#">Novidades</a><a href="#">Edições especiais</a></div>
+    <div><h4>Ajuda</h4><a href="#">Envios</a><a href="#">Devoluções</a><a href="#">Autenticidade</a></div>
+    <div><h4>Contacto</h4><a href="mailto:hello@maison-aureum.com">hello@maison-aureum.com</a><a href="https://www.instagram.com/divadjewerly.pt?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">Instagram</a><a 
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head"><h3>O seu saco</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">O seu saco está vazio.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">€0</strong></div>
+    <button class="btn btn-dark checkout" id="checkout">Finalizar compra</button>
+    <small class="checkout-note">Pagamento seguro via PayPal ou MB WAY.</small>
+  </aside>
+  <aside class="cart account" id="accountPanel">
+    <div class="cart-head"><h3>A minha conta</h3><button id="closeAccount">×</button></div>
+    <div class="cart-items account-body">
+      <p class="account-email" id="accountEmail"></p>
+      <form id="profileForm">
+        <label>Nome completo<input id="pf-name" type="text" autocomplete="name"></label>
+        <label>Telefone<input id="pf-phone" type="tel" autocomplete="tel"></label>
+        <label>Morada<input id="pf-address" type="text" autocomplete="street-address"></label>
+        <label>Código Postal<input id="pf-zip" type="text" autocomplete="postal-code"></label>
+        <label>Cidade<input id="pf-city" type="text" autocomplete="address-level2"></label>
+        <label>País<input id="pf-country" type="text" autocomplete="country-name"></label>
+        <button class="btn btn-dark" type="submit">Guardar dados</button>
+        <small id="profileMsg"></small>
+      </form>
+    </div>
+    <button class="text-link logout-link" id="logoutBtn">Terminar sessão</button>
+  </aside>
+
+  <div class="pquick" id="checkoutModal">
+    <div class="pquick-box checkout-box">
+      <button class="pquick-close" id="checkoutClose" aria-label="Fechar">×</button>
+      <div class="checkout-content">
+        <h3>Finalizar compra</h3>
+        <p class="checkout-total">Total a pagar: <strong id="checkoutTotal">€0</strong></p>
+        <div class="pay-methods">
+          <button class="pay-method-btn" data-method="paypal">PayPal</button>
+          <button class="pay-method-btn" data-method="mbway">MB WAY</button>
+        </div>
+        <div id="payPaypalBox" class="pay-box">
+          <div id="paypal-button-container"></div>
+        </div>
+        <div id="payMbwayBox" class="pay-box">
+          <label>Número de telemóvel (MB WAY)<input id="mbwayPhone" type="tel" placeholder="9xxxxxxxx" maxlength="9"></label>
+          <button class="btn btn-dark" id="mbwayPayBtn">Pedir pagamento</button>
+          <p id="mbwayStatus"></p>
+        </div>
+        <p id="checkoutMsg"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="pquick" id="pquick">
+    <div class="pquick-box">
+      <button class="pquick-close" id="pquickClose" aria-label="Fechar">×</button>
+      <div class="pquick-gallery">
+        <div class="pquick-main">
+          <img id="pquickMainImg" src="" alt="">
+          <div class="pquick-nav" id="pquickNav">
+            <button id="pquickPrev" aria-label="Foto anterior">‹</button>
+            <button id="pquickNext" aria-label="Foto seguinte">›</button>
+          </div>
+        </div>
+        <div class="pquick-thumbs" id="pquickThumbs"></div>
+      </div>
+      <div class="pquick-info">
+        <h3 id="pquickName"></h3>
+        <p id="pquickDesc"></p>
+        <p class="price" id="pquickPrice"></p>
+        <button class="btn btn-dark" id="pquickAdd">Adicionar ao saco</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
