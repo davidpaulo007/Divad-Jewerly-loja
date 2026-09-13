@@ -2,7 +2,7 @@ const products=[
  {id:1,name:"Audemar Piguet 41",category:"classic",desc:"Automático · Aço 316L",price:219,images:["imagens/audemarpiguetfrente.jpg", "imagens/audemarpiguetlado.jpg", "imagens/audemarpiguetbaixo.jpg"]},
  {id:2,name:"Swarovsky Hiperbola Colar ",category:"colares",desc:"Cronógrafo · Cerâmica",price:26,images:["imagens/colarmoca.jpg","imagens/colarunico.jpg", "imagens/colarproximo.jpg"]},
  {id:3,name:"Swarovsky Brinco Mola Matrix",category:"colares",desc:"Automático · Couro italiano",price:25,images:["imagens/brincomoca.jpg", "imagens/brincotras.jpg", "imagens/brincounico.jpg"]},
- {id:4,name:"Aureum Grand Édition",category:"limited",desc:"Edição limitada · 18K",price:12900,images:["imagens/relogio-aureum-grand.png"]},
+ {id:4,name:"Aureum Grand",category:"limited",desc:"Edição limitada · 18K",price:12900,images:["imagens/relogio-aureum-grand.png"]},
  {id:5,name:"Riviera Sport",category:"sport",desc:"Automático · Titânio",price:7350,images:["imagens/relogio-riviera.png"]},
  {id:6,name:"Minimal 36",category:"classic",desc:"Quartzo suíço · Aço",price:3100,images:["imagens/relogio-minimal.jpg"]},
  {id:7,name:"Luna Édition",category:"limited",desc:"Edição limitada · Diamantes",price:15800,images:["imagens/relogio-luna.jpg"]},
