@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Biblioteca Oficial do Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
@@ -58,9 +61,9 @@
           <button class="filter active" data-filter="all">Todos</button>
           <button class="filter" data-filter="classic">Clássicos</button>
           <button class="filter" data-filter="sport">Desportivos</button>
-           <button class="filter" data-filter="sport">Formais</button>
+          <button class="filter" data-filter="sport">Formais</button>
           <button class="filter" data-filter="limited">Edições especiais</button>
-           <button class="filter" data-filter="colares">Colares</button>
+          <button class="filter" data-filter="colares">Colares</button>
         </div>
       </div>
       <div class="products" id="products"></div>
@@ -92,7 +95,7 @@
     <div class="footer-brand">Divad <span>Jewelry</span><p>Luxo selecionado. Serviço excecional.</p></div>
     <div><h4>Comprar</h4><a href="#colecao">Coleção</a><a href="#">Novidades</a><a href="#">Edições especiais</a></div>
     <div><h4>Ajuda</h4><a href="#">Envios</a><a href="#">Devoluções</a><a href="#">Autenticidade</a></div>
-    <div><h4>Contacto</h4><a href="mailto:hello@maison-aureum.com">hello@maison-aureum.com</a><a href="https://www.instagram.com/divadjewerly.pt?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">Instagram</a><a 
+    <div><h4>Contacto</h4><a href="mailto:hello@maison-aureum.com">hello@maison-aureum.com</a><a href="https://www.instagram.com/divadjewerly.pt?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></div>
   </footer>
 
   <aside class="cart" id="cart">
@@ -102,6 +105,7 @@
     <button class="btn btn-dark checkout" id="checkout">Finalizar compra</button>
     <small class="checkout-note">Pagamento seguro via PayPal ou MB WAY.</small>
   </aside>
+
   <aside class="cart account" id="accountPanel">
     <div class="cart-head"><h3>A minha conta</h3><button id="closeAccount">×</button></div>
     <div class="cart-items account-body">
